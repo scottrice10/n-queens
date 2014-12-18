@@ -25,8 +25,11 @@
     },
 
     togglePiece: function(rowIndex, colIndex) {
-      this.get(rowIndex)[colIndex] = + !this.get(rowIndex)[colIndex];
-      this.trigger('change');
+      var row = this.get(rowIndex);
+      if(typeof row !== 'undefined'){
+        row[colIndex] = + !row[colIndex];
+        this.trigger('change');
+      }
     },
 
     _getFirstRowColumnIndexForMajorDiagonalOn: function(rowIndex, colIndex) {

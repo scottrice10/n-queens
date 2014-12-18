@@ -87,7 +87,7 @@
         }
       }
 
-      return counter >= 2; // fixme
+      return counter >= 2;
     },
 
     // test if any rows on this board contain conflicts
@@ -98,7 +98,7 @@
           return true;
         }
       }
-      return false; // fixme
+      return false;
     },
 
 
@@ -116,7 +116,7 @@
         }
       }
 
-      return counter >= 2; // fixme
+      return counter >= 2;
     },
 
     // test if any columns on this board contain conflicts
@@ -130,7 +130,7 @@
           }
         }
       }
-      return false; // fixme
+      return false;
     },
 
 
@@ -166,7 +166,7 @@
         }
       }
 
-      return false; // fixme
+      return false;
     },
 
 
@@ -188,7 +188,7 @@
         newIndex--;
       }
 
-      return counter >= 2; // fixme
+      return counter >= 2;
     },
 
     // test if any minor diagonals on this board contain conflicts
@@ -203,7 +203,7 @@
         }
       }
 
-      return false; // fixme
+      return false;
     }
 
     /*--------------------  End of Helper Functions  ---------------------*/

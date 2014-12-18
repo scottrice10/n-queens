@@ -97,7 +97,15 @@ window.findNQueensSolution = function(n) {
   };
 
   solver([]);
-  return result[0];
+
+  var element = result[0] || [];
+  for(var j=0;j<element.length;j++){
+    if(element[j] !== undefined){
+      board.togglePiece(j, element[j]);
+    }
+  }
+
+  return board.rows();
 };
 
 

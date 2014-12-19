@@ -39,13 +39,9 @@
         );
       };
       $(function(){
-        // this is a pre-baked solution for n-queens in the n = 4 case, rendered to the screen using our handy visualizer.
-        displayBoard([
-          [0, 1, 0, 0],
-          [0, 0, 0, 1],
-          [1, 0, 0, 0],
-          [0, 0, 1, 0]
-        ]);
+        $('button.nInput').click(function(){
+          displayBoard(findNQueensSolution(n)) ;
+        });
 
         var n = 4;
         findNRooksSolution(n);
@@ -54,5 +50,8 @@
         countNQueensSolutions(n);
       });
     </script>
+    <div style="float:left;">
+      <input class='nInput' type='text'><button class ='nInput'></button>
+    </div>
   </body>
 </html>
